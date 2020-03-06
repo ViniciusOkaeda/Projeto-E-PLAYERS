@@ -318,7 +318,12 @@ fieldset legend{
     margin-top: 2em;
     cursor: pointer;
 }
-
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    margin-left: 2em;;
+    display: none;
+}
 @media screen and (max-width: 1200px){
     .campea{
         right: 0%;
@@ -382,3 +387,38 @@ footer .container{
     max-width: 180px;
 }
 }/*fim do media screen de 768 */
+
+@media screen and (max-width: 460px){
+    .cabecalho .fa-bars{
+        display: block;
+    }
+    #menu{
+        position: absolute;
+        top:73px;
+        background-color: rgb(82, 82, 82);
+        width: 100%;
+        display: none;
+    }
+    .cabecalho div{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height: 250px;
+    }
+    .cabecalho ul a{
+        padding: 0.5em 80% 1em 0.5em;
+        margin:0.1em 0;
+        margin-left: 4em;
+    }
+
+
+
+    .banner{
+        max-width: 460px;
+         background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
